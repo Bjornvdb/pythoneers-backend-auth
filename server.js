@@ -66,6 +66,7 @@ app.get('/loginurl', (req, res) => {
 })
 
 app.get('/login', (req, res) => {
+  console.log('login endpoint is hit')
   res.redirect(authorizationUrl);
 })
 
